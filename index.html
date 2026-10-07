@@ -646,6 +646,15 @@
                 font-size: 16px;
             }
 
+            .profile-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .profile-actions .btn {
+                width: 100%;
+            }
+
             .about-grid,
             .skills-grid,
             .projects-grid {
@@ -676,6 +685,14 @@
                 font-size: 41px;
             }
 
+            .profile-card {
+                min-height: 280px;
+            }
+
+            .profile-photo {
+                max-height: 360px;
+            }
+
             .interest-grid {
                 grid-template-columns: 1fr 1fr;
             }
@@ -688,8 +705,8 @@
                 padding: 35px 22px;
             }
 
-            .profile-card {
-                min-height: 300px;
+            .socials {
+                gap: 10px 14px;
             }
         }
     </style>
@@ -724,38 +741,38 @@
         <div class="container profile-wrap">
             <div class="profile-card">
                 <img
-    src="profile.jpg"
-    alt="Ariq Fauzan"
-    class="profile-photo"
-/>
+                    src="profile.jpg"
+                    alt="Ariq Fauzan"
+                    class="profile-photo"
+                />
             </div>
 
             <div class="profile-copy">
                 <p class="eyebrow">Computer Science Student</p>
 
-<h1>
-    Hi, I'm <span>Ariq Fauzan.</span>
-</h1>
+                <h1>
+                    Hi, I'm <span>Ariq Fauzan.</span>
+                </h1>
 
-<p>
-    I'm a Computer Science student at BINUS University, focused on
-    Artificial Intelligence, Cloud Computing, and Software Engineering.
-    I enjoy building practical solutions, learning modern technologies,
-    and developing projects that combine technical depth with real-world impact.
-</p>
+                <p>
+                    I'm a Computer Science student at BINUS University, focused on
+                    Artificial Intelligence, Cloud Computing, and Software Engineering.
+                    I enjoy building practical solutions, learning modern technologies,
+                    and developing projects that combine technical depth with real-world impact.
+                </p>
 
                 <div class="profile-tags">
-    <span>AI Enthusiast</span>
-    <span>Cloud Computing</span>
-    <span>Software Engineering</span>
-    <span>Web Development</span>
+                    <span>AI Enthusiast</span>
+                    <span>Cloud Computing</span>
+                    <span>Software Engineering</span>
+                    <span>Web Development</span>
                 </div>
 
                 <div class="profile-actions">
-    <a href="#projects" class="btn primary">View My Projects</a>
-    <a href="Ariq_Fauzan_Albaqiy_Kusumah_CV_Updated%20(1).pdf" target="_blank" class="btn">
-        Download CV
-    </a>
+                    <a href="#projects" class="btn primary">View My Projects</a>
+                    <a href="Ariq_Fauzan_Albaqiy_Kusumah_CV_Updated%20(1).pdf" target="_blank" class="btn">
+                        Download CV
+                    </a>
                 </div>
 
                 <div class="socials">
@@ -804,16 +821,16 @@
                 <div class="about-card">
 
                     <p>
-    I am a Computer Science student at BINUS University who is actively
-    developing my skills through academic projects, technical learning,
-    and practical problem-solving experiences.
-</p>
+                        I am a Computer Science student at BINUS University who is actively
+                        developing my skills through academic projects, technical learning,
+                        and practical problem-solving experiences.
+                    </p>
 
-<p>
-    My main focus areas are Artificial Intelligence, Cloud Computing,
-    and Software Engineering, with a growing interest in building
-    scalable and impactful digital solutions.
-</p>
+                    <p>
+                        My main focus areas are Artificial Intelligence, Cloud Computing,
+                        and Software Engineering, with a growing interest in building
+                        scalable and impactful digital solutions.
+                    </p>
 
                     <p>
                         Outside of my technical studies, I am also interested
@@ -973,57 +990,57 @@
 
     <!-- PROJECTS -->
 
-<section id="projects">
+    <section id="projects">
 
-    <div class="container">
+        <div class="container">
 
-        <div class="section-heading">
+            <div class="section-heading">
 
-            <div class="section-kicker">
-                Projects
+                <div class="section-kicker">
+                    Projects
+                </div>
+
+                <h2 class="section-title">
+                    Things I've worked on.
+                </h2>
+
+                <p class="section-description">
+                    Selected academic and personal projects demonstrating problem-solving and technical skills.
+                </p>
+
             </div>
 
-            <h2 class="section-title">
-                Things I've worked on.
-            </h2>
-
-            <p class="section-description">
-                Selected academic and personal projects demonstrating problem-solving and technical skills.
-            </p>
-
-        </div>
-
-        <div class="projects-grid">
+            <div class="projects-grid">
 
                 <!-- PROJECT 01 -->
 
                 <div class="project-card">
 
-                <div class="project-number">
-                    PROJECT 01
-                </div>
+                    <div class="project-number">
+                        PROJECT 01
+                    </div>
 
-                <h3>
-                    AI Herbal Leaf Classification
-                </h3>
+                    <h3>
+                        AI Herbal Leaf Classification
+                    </h3>
 
-                <p>
-                    Built a computer vision project to classify herbal leaves using
-                    Convolutional Neural Network (CNN) and VGG16 architecture. The model aims
-                    to reduce manual identification time and improve accuracy in plant recognition.
-                </p>
+                    <p>
+                        Built a computer vision project to classify herbal leaves using
+                        Convolutional Neural Network (CNN) and VGG16 architecture. The model aims
+                        to reduce manual identification time and improve accuracy in plant recognition.
+                    </p>
 
-                <div class="tech">
-                    Python · TensorFlow · CNN · VGG16 · Computer Vision
-                </div>
+                    <div class="tech">
+                        Python · TensorFlow · CNN · VGG16 · Computer Vision
+                    </div>
 
-                <a
-                    href="https://github.com/wahyubudii/CNN-VGG16-Herbal-Leaf-Classification"
-                    target="_blank"
-                    class="project-link">
-                    View Repository →
-                </a>
-                
+                    <a
+                        href="https://github.com/wahyubudii/CNN-VGG16-Herbal-Leaf-Classification"
+                        target="_blank"
+                        class="project-link">
+                        View Repository →
+                    </a>
+
                 </div>
 
 
@@ -1031,30 +1048,30 @@
 
                 <div class="project-card">
 
-                <div class="project-number">
-                    PROJECT 02
-                </div>
+                    <div class="project-number">
+                        PROJECT 02
+                    </div>
 
-                <h3>
-                    Personal Portfolio Website
-                </h3>
+                    <h3>
+                        Personal Portfolio Website
+                    </h3>
 
-                <p>
-                    Designed and developed a responsive personal portfolio to showcase my
-                    academic background, technical skills, projects, and professional interests
-                    in a modern and user-friendly format.
-                </p>
+                    <p>
+                        Designed and developed a responsive personal portfolio to showcase my
+                        academic background, technical skills, projects, and professional interests
+                        in a modern and user-friendly format.
+                    </p>
 
-                <div class="tech">
-                    HTML · CSS · GitHub Pages · Responsive Design
-                </div>
+                    <div class="tech">
+                        HTML · CSS · GitHub Pages · Responsive Design
+                    </div>
 
-                <a
-                    href="https://jalanprogo-png.github.io/personal-portfolio/"
-                    target="_blank"
-                    class="project-link">
-                    View Live Website →
-                </a>
+                    <a
+                        href="https://jalanprogo-png.github.io/personal-portfolio/"
+                        target="_blank"
+                        class="project-link">
+                        View Live Website →
+                    </a>
 
                 </div>
 
@@ -1100,8 +1117,8 @@
                     </h3>
 
                     <p>
-                        Organizational experience as part of the
-                        BINUS Crypto Community.
+                        Participated in community activities focused on blockchain and digital assets,
+                        strengthening my understanding of emerging technology and collaborative learning.
                     </p>
 
                 </div>
