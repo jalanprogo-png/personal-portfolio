@@ -125,146 +125,133 @@
             color: var(--blue-bright);
         }
 
-        /* HERO */
+        /* PROFILE HERO UPGRADED */
+        .profile-upgrade {
+            padding: 120px 0 80px;
+        }
 
-#home {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding-top: 70px;
-    position: relative;
-}
-
-.hero {
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-
-        .status-badge {
-            display: inline-flex;
+        .profile-wrap {
+            display: grid;
+            grid-template-columns: 1.1fr 1.5fr;
+            gap: 40px;
             align-items: center;
-            gap: 9px;
-            padding: 8px 13px;
-            border: 1px solid rgba(110, 168, 254, 0.2);
-            background: rgba(110, 168, 254, 0.06);
-            border-radius: 999px;
-            color: #a9caff;
+        }
+
+        .profile-card {
+            background: linear-gradient(180deg, #4bb3f8 0%, #1aa0ee 100%);
+            border: 2px solid rgba(255, 255, 255, 0.22);
+            border-radius: 24px;
+            padding: 18px;
+            box-shadow: 0 25px 60px rgba(67, 148, 255, 0.18);
+            min-height: 480px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-photo {
+            width: 100%;
+            max-width: 520px;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 18px;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            filter: saturate(0.9) contrast(1.05) blur(0.35px);
+            background: #dfeefa;
+        }
+
+        .profile-copy .eyebrow {
+            display: inline-block;
+            margin-bottom: 16px;
+            color: #8bbcff;
             font-size: 12px;
-            font-weight: bold;
-            letter-spacing: 0.4px;
-            margin-bottom: 22px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 700;
         }
 
-        .status-dot {
-            width: 7px;
-            height: 7px;
-            background: #71e39b;
-            border-radius: 50%;
-            box-shadow: 0 0 12px rgba(113, 227, 155, 0.8);
-        }
-
-        .hero-label {
-            color: var(--blue);
-            font-weight: bold;
-            margin-bottom: 14px;
-            letter-spacing: 1.8px;
-            font-size: 13px;
-        }
-
-        .hero h1 {
-            font-size: clamp(45px, 8vw, 82px);
-            line-height: 0.98;
+        .profile-copy h1 {
+            font-size: clamp(48px, 6vw, 84px);
+            line-height: 0.96;
             letter-spacing: -3px;
-            margin-bottom: 25px;
+            margin-bottom: 18px;
         }
 
-        .hero h1 span {
-            background: linear-gradient(90deg, #6ea8fe, #a78bfa);
+        .profile-copy h1 span {
+            background: linear-gradient(90deg, #7fb8ff, #b792ff);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
         }
 
-        .hero-description {
-            color: var(--muted);
+        .profile-copy p {
+            color: #b3bfd0;
             font-size: 18px;
-            max-width: 750px;
-            margin-bottom: 18px;
+            max-width: 700px;
+            line-height: 1.7;
         }
 
-        .hero-description strong {
-            color: #dbe7f8;
-            font-weight: 600;
-        }
-
-        .hero-interests {
+        .profile-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 9px;
-            margin-bottom: 30px;
+            gap: 10px;
+            margin: 26px 0 28px;
         }
 
-        .interest-pill {
-            padding: 7px 11px;
-            border: 1px solid var(--border);
-            background: rgba(255, 255, 255, 0.025);
-            color: #aeb8c8;
+        .profile-tags span {
+            padding: 8px 13px;
             border-radius: 999px;
+            border: 1px solid rgba(148, 163, 184, 0.22);
+            background: rgba(255, 255, 255, 0.02);
+            color: #dfeaf9;
             font-size: 12px;
         }
 
-        .buttons {
+        .profile-actions {
             display: flex;
             gap: 12px;
             flex-wrap: wrap;
+            margin-bottom: 20px;
         }
 
         .btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 12px 20px;
-            border-radius: 9px;
-            font-weight: bold;
+            padding: 12px 22px;
+            border-radius: 10px;
+            font-weight: 700;
+            border: 1px solid rgba(148, 163, 184, 0.26);
+            color: #edf4ff;
+            background: rgba(255, 255, 255, 0.02);
+            transition: 0.2s ease;
+        }
+
+        .btn.primary {
+            background: linear-gradient(135deg, #6ea8fe, #88bafe);
+            color: #07111d;
+            border-color: transparent;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .socials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: 18px;
+        }
+
+        .socials a {
+            color: #c9d8ee;
             font-size: 14px;
-            border: 1px solid #334155;
-            transition: 0.25s ease;
+            opacity: 0.9;
         }
 
-        .btn-primary {
-            background: var(--blue);
-            color: #07101f;
-            border-color: var(--blue);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            background: var(--blue-bright);
-            box-shadow: 0 10px 30px rgba(110, 168, 254, 0.15);
-        }
-
-        .btn-secondary {
-            color: #d6deea;
-            background: rgba(255, 255, 255, 0.025);
-        }
-
-        .btn-secondary:hover {
-            transform: translateY(-2px);
-            border-color: var(--blue);
-            color: var(--blue-bright);
-        }
-
-        /* SCROLL HINT */
-
-        .scroll-hint {
-            position: absolute;
-            bottom: 28px;
-            left: 0;
-            color: #596578;
-            font-size: 11px;
-            letter-spacing: 1px;
+        .socials a:hover {
+            color: #8bbcff;
         }
 
         /* GENERAL SECTIONS */
@@ -630,6 +617,14 @@
             .interest-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
+
+            .profile-wrap {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-card {
+                min-height: 360px;
+            }
         }
 
         @media (max-width: 768px) {
@@ -642,16 +637,12 @@
                 display: none;
             }
 
-            #home {
-                padding-top: 60px;
-            }
-
-            .hero h1 {
+            .profile-copy h1 {
                 font-size: 48px;
                 letter-spacing: -2px;
             }
 
-            .hero-description {
+            .profile-copy p {
                 font-size: 16px;
             }
 
@@ -677,15 +668,11 @@
             .section-title {
                 font-size: 29px;
             }
-
-            .scroll-hint {
-                display: none;
-            }
         }
 
         @media (max-width: 480px) {
 
-            .hero h1 {
+            .profile-copy h1 {
                 font-size: 41px;
             }
 
@@ -699,6 +686,10 @@
 
             .contact-card {
                 padding: 35px 22px;
+            }
+
+            .profile-card {
+                min-height: 300px;
             }
         }
     </style>
@@ -727,74 +718,61 @@
         </div>
     </nav>
 
+    <!-- PROFILE HERO UPGRADED -->
 
-    <!-- HERO -->
+    <section class="profile-upgrade">
+        <div class="container profile-wrap">
+            <div class="profile-card">
+                <img
+                    src="assets/profile.jpg"
+                    alt="Ariq Fauzan"
+                    class="profile-photo"
+                />
+            </div>
 
-    <section id="home">
-
-        <div class="container">
-
-            <div class="hero">
-
-                <div class="status-badge">
-                    <span class="status-dot"></span>
-                    Currently learning & building
-                </div>
-
-                <div class="hero-label">
-                    COMPUTER SCIENCE STUDENT
-                </div>
+            <div class="profile-copy">
+                <p class="eyebrow">Computer Science Student</p>
 
                 <h1>
                     Hi, I'm <span>Ariq Fauzan.</span>
                 </h1>
 
-                <p class="hero-description">
-                    Computer Science student at <strong>BINUS University</strong>
-                    interested in Software Engineering, Cloud Computing,
-                    Artificial Intelligence, Web Development, and exploring
-                    the cryptocurrency ecosystem.
+                <p>
+                    I'm a Computer Science student at BINUS University, interested in
+                    software engineering, cloud computing, artificial intelligence,
+                    and web development.
                 </p>
 
-                <div class="hero-interests">
-                    <span class="interest-pill">Software Engineering</span>
-                    <span class="interest-pill">Cloud Computing</span>
-                    <span class="interest-pill">Artificial Intelligence</span>
-                    <span class="interest-pill">Web Development</span>
-                    <span class="interest-pill">Crypto Interest</span>
+                <div class="profile-tags">
+                    <span>Software Engineering</span>
+                    <span>Cloud</span>
+                    <span>AI</span>
+                    <span>Web Development</span>
                 </div>
 
-                <div class="buttons">
-
-                    <a href="#projects" class="btn btn-primary">
-                        View My Projects
-                    </a>
-
-                    <a
-                        href="Ariq_Fauzan_Albaqiy_Kusumah_CV_Updated%20(1).pdf"
-                        target="_blank"
-                        class="btn btn-secondary">
+                <div class="profile-actions">
+                    <a href="#projects" class="btn primary">View My Projects</a>
+                    <a href="Ariq_Fauzan_Albaqiy_Kusumah_CV_Updated%20(1).pdf" target="_blank" class="btn">
                         Download CV
                     </a>
-
-                    <a
-                        href="mailto:jalan.progo@gmail.com"
-                        class="btn btn-secondary">
-                        Contact Me
-                    </a>
-
                 </div>
 
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/ariq-aja-029119438/?isSelfProfile=true" target="_blank" rel="noreferrer">
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/jalanprogo-png" target="_blank" rel="noreferrer">
+                        GitHub
+                    </a>
+                    <a href="mailto:jalan.progo@gmail.com">
+                        Email
+                    </a>
+                    <a href="https://instagram.com/fzznw212" target="_blank" rel="noreferrer">
+                        Instagram
+                    </a>
+                </div>
             </div>
-
         </div>
-
-        <div class="container">
-            <div class="scroll-hint">
-                SCROLL TO EXPLORE ↓
-            </div>
-        </div>
-
     </section>
 
 
@@ -1181,7 +1159,7 @@
                     <a
                         href="Ariq_Fauzan_Albaqiy_Kusumah_CV_Updated%20(1).pdf"
                         target="_blank"
-                        class="btn btn-primary">
+                        class="btn primary">
                         View My CV →
                     </a>
 
@@ -1221,14 +1199,14 @@
 
                     <a
                         href="mailto:jalan.progo@gmail.com"
-                        class="btn btn-primary">
+                        class="btn primary">
                         Email Me
                     </a>
 
                     <a
                         href="https://github.com/jalanprogo-png"
                         target="_blank"
-                        class="btn btn-secondary">
+                        class="btn">
                         GitHub
                     </a>
 
